@@ -6,6 +6,10 @@ zakupy = {
     "Kebab": {"cena_za_kg": 5, "ilosc_kg": 1},
     "Sos 100 wysp": {"cena_za_kg": 1.5, "ilosc_kg": 2.5},
 }
+lista = [1, 2, 4, [5, 6, [1]]]
+print(lista[-1][-1][-1])
+
+print(zakupy["Mustard"]["ilosc_kg"])
 
 """
 Zakupy:
@@ -22,6 +26,6 @@ for nazwa, dane in zakupy.items():
     c_kg = dane["cena_za_kg"]
     ilosc_kg = dane["ilosc_kg"]
     cena = c_kg * ilosc_kg
-    raport += f"{nazwa:15} {c_kg:6.2f}\n"
+    raport += f"{nazwa:15} {c_kg:6.2f} PLN, {ilosc_kg:6.2f} kg, {cena:7.2f} PLN\n"
 
 print(raport)
