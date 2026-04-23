@@ -213,7 +213,7 @@ break - wyjscie z petli
 
 ### kolekcje
 
-#### listy
+#### listy - list
 
 x = []
 x.append(1) # [1]
@@ -222,3 +222,22 @@ x.append(2) # [1, 2]
 1 in x
 1 not in x
 
+#### zbiory - set
+
+set() -  pusty zbior
+
+A = {1, 2, 3}
+B = {3, 4, 5}
+C = {3, 5}
+suma zbiorow = A | B
+roznica zbiorow = A - B
+wspolna zbiorowa = A & B
+roznica symetryczna = A ^ B
+
+czy C jest podzbiorem A
+
+C.issubset(A)
+
+# czy A jest nadzbiorem C
+
+A.issuperset(C)
