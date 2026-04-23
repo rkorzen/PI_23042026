@@ -1,3 +1,26 @@
+# markdown
+
+* ele 1
+* ele 2
+
+
+1. xxx
+2. xxx
+3. xxx
+
+[x](http://google.com)
+
+**bold**
+*italic*
+
+| a | b |
+|---|--- |
+| 1 | 2 |
+| 3 | 4 |
+
+
+x = y + 1
+
 # REPL
 
 Z wiersza polecen odpalamy:
@@ -69,6 +92,133 @@ https://pywaw.org/105/
 
 #### (bool)
 
-True + True ==  2
+False, True
 
+True + True == 2
+
+### opratory logiczne
+
+and, or , not
+
+    x > 10 and x % 2 == 0
+    x > 10 or x % 2 == 0
+    not False -> True
+
+
+
+
+
+### operatory arytmetyczne
+
+    + - / * 
+    **  - potegowanie
+    // - dzielenie calkowite
+    % - modulo
+
+```
+x = 0
+x = x + 1
+x += 1
+
+x /= 2  # x = x / 2
+
+```
+
+### zmienne
+
+dobre:
+x = 10 # x to jest zmienna
+_1x = 10
+x_y = 10
+
+print = 10
+int = 10
+
+zle przyklady:
+
+10 = x
+1x = 10
+x y = 10
+for = 10  # keyword nie moze byc zmienna
+
+konwencja: snake_case
+
+### wyrazenia warunkowe
+ogolnie:
+if <warunek>:
+   <blok instrukcji>
+
+przyklad
+if x > 10:
+   print(x)
+   print(x + 1)
+
+
+ogolnie:
+if <warunek>:
+    <blok instrukcji>
+else:
+  <blok instrukcji>
+
+przyklad
+
+if x > 10:
+   print(x)
+else:
+   print("za mala wartosc")
+
+
+
+ogolnie:
+if <warunek>:
+   <blok instrukcji>
+elif <warunek>:
+    <blok instrukcji>
+...
+else:
+    <blok instrukcji>
+
+przyklad
+
+if x > 10:
+   print(x)
+elif x > 5:
+   print("x troche male")
+else:
+   print("za mala wartosc")
+
+w innych jezykach bloki kodu wyznaczane sa przez nawiasy
+
+if (x > 10) { print(x) } else { print("za mala wartosc") }
+
+if (x > 10) { 
+    print(x) 
+} else { 
+    print("za mala wartosc") 
+}
+
+
+### petle
+
+#### petla for
+
+for <zmienna> in <kolekcja>:
+    <blok instrukcji>
+<instrukcja po petlki>
+
+
+continue - pominiecie biezacego iteracji
+break - wyjscie z petli
+
+
+### kolekcje
+
+#### listy
+
+x = []
+x.append(1) # [1]
+x.append(2) # [1, 2]
+
+1 in x
+1 not in x
 
