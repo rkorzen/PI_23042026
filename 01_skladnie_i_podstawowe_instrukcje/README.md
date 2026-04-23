@@ -241,3 +241,64 @@ C.issubset(A)
 # czy A jest nadzbiorem C
 
 A.issuperset(C)
+
+
+### slownik - dict
+
+{
+    "klucz": "wartosc",
+    1: "a"
+}
+
+>>> x["c"]
+Traceback (most recent call last):
+  File "<python-input-45>", line 1, in <module>
+    x["c"]
+    ~^^^^^
+KeyError: 'c'
+>>> if "c" in x:
+...     print(x["c"]
+...     
+... x.get("b")
+... 
+  File "<python-input-46>", line 2
+    print(x["c"]
+         ^
+SyntaxError: '(' was never closed
+>>> x.get("b")
+2
+>>> x.get("c")
+>>> x["b"]
+2
+>>> x["b"] = 3
+>>> x["b"]
+3
+>>> for el in x:
+...     print(el)
+...     
+a
+b
+>>> for el in x.keys():
+...     print(el)
+...     
+a
+b
+>>> for el in x.items():
+...     print(el)
+...     
+('a', 1)
+('b', 3)
+>>> for k, v in x.items():
+...     print(k, v)
+...     
+a 1
+b 3
+>>> 
+
+### krotka - tuple
+
+krotka jest niemutowalne
+
+x = (1, 2, 3)
+x.append(4) # bledne
+
