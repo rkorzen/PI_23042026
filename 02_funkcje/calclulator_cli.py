@@ -1,5 +1,6 @@
 import sys
 import calculator
+from calculator import operations as oper
 print(sys.argv)
 
 if len(sys.argv) != 4:
@@ -9,5 +10,6 @@ if len(sys.argv) != 4:
 op, a, b = sys.argv[1:]
 a = int(a)
 b = int(b)
-result = calculator.operations[op](a, b)
+# result = calculator.operations[op](a, b)
+result = oper[op](a, b)
 print(result)
