@@ -13,6 +13,7 @@ python cwiczenie01.py logs.txt results2.txt
 
 
 """
+import csv
 import sys
 from collections import defaultdict
 
@@ -32,8 +33,9 @@ last_login = {}
 total_time = defaultdict(int)
 
 with open(input_file) as f:
-    for line in f:
-        user, action, t = line.split(";")
+    reader = csv.reader(f, delimiter=";")
+    for line in reader:
+        user, action, t = line
         t = int(t)
 
         if action == "LOGIN":

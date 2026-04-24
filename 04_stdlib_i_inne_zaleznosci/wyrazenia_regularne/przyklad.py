@@ -9,7 +9,7 @@ pattern = re.compile(PHONE_PATTERN)
 print(pattern.findall(text))
 
 print(re.findall(PHONE_PATTERN, text))
-print(re.match(PHONE_PATTERN, "123456789"))
+print(re.match(PHONE_PATTERN, "123"))
 
 
 
