@@ -13,3 +13,10 @@ python cwiczenie01.py logs.txt results2.txt
 
 
 """
+last_login = {}
+total_time = {}
+
+with open("logs.txt") as f:
+    for line in f:
+        user, action, t = line.split(";")
+        t = int(t)
